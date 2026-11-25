@@ -1,0 +1,38 @@
+# Dashboard theme. Streamlit reads this file when it is started from the
+# project root:  streamlit run dashboard/app.py
+# The app follows the system light / dark setting; both are styled below.
+
+[theme]
+primaryColor = "#2a78d6"
+baseRadius = "0.6rem"
+headingFontSizes = ["2rem", "1.35rem", "1.1rem"]
+headingFontWeights = [700, 600, 600]
+metricValueFontSize = "1.9rem"
+metricValueFontWeight = 600
+showSidebarBorder = false
+chartCategoricalColors = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"]
+
+[theme.light]
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f2f4f7"
+textColor = "#0f1720"
+borderColor = "#dde2e8"
+
+[theme.light.sidebar]
+backgroundColor = "#0f1b2d"
+secondaryBackgroundColor = "#1b2a41"
+textColor = "#e6ebf2"
+borderColor = "#22324b"
+
+[theme.dark]
+primaryColor = "#3987e5"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#171c26"
+textColor = "#e8ecf1"
+borderColor = "#2a313c"
+
+[theme.dark.sidebar]
+backgroundColor = "#0a101b"
+secondaryBackgroundColor = "#141d2c"
+textColor = "#e6ebf2"
+borderColor = "#1c2738"

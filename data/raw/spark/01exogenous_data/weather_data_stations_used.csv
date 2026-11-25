@@ -1,0 +1,18 @@
+parameter,station_id,name,state,distance,height,latitude,longitude
+temperature_air_mean_2m,04177,Rheinstetten,Baden-Württemberg,,116.0,48.9726,8.3301
+temperature_dew_point_mean_2m,05275,Waghäusel-Kirrlach,Baden-Württemberg,28.1542,105.0,49.2445,8.5374
+humidity,03925,Pforzheim-Ispringen,Baden-Württemberg,,332.0,48.9329,8.6973
+humidity,04177,Rheinstetten,Baden-Württemberg,,116.0,48.9726,8.3301
+humidity,14017,Herxheimweyher,Rheinland-Pfalz,,127.0,49.1581,8.2536
+wind_speed,03925,Pforzheim-Ispringen,Baden-Württemberg,,332.0,48.9329,8.6973
+wind_speed,04177,Rheinstetten,Baden-Württemberg,,116.0,48.9726,8.3301
+wind_direction,04177,Rheinstetten,Baden-Württemberg,6.5868,116.0,48.9726,8.3301
+wind_gust_max,04177,Rheinstetten,Baden-Württemberg,6.5868,116.0,48.9726,8.3301
+pressure_air_site,13674,Waibstadt,Baden-Württemberg,48.4988,237.0,49.2943,8.9053
+pressure_air_sea_level,13674,Waibstadt,Baden-Württemberg,48.4988,237.0,49.2943,8.9053
+radiation_global,04928,Stuttgart (Schnarrenberg),Baden-Württemberg,61.4891,314.0,48.8281,9.2
+sunshine_duration,04177,Rheinstetten,Baden-Württemberg,6.5868,116.0,48.9726,8.3301
+cloud_cover_total,03362,Mühlacker,Baden-Württemberg,34.497,243.0,48.9721,8.8735
+visibility_range,04177,Rheinstetten,Baden-Württemberg,6.5868,116.0,48.9726,8.3301
+precipitation_height,04177,Rheinstetten,Baden-Württemberg,,116.0,48.9726,8.3301
+precipitation_height,15013,Malsch/Baden,Baden-Württemberg,,119.0,48.8946,8.3379

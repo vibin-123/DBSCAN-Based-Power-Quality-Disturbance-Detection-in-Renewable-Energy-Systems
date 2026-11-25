@@ -1,0 +1,392 @@
+{
+ "exp1": {
+  "experiment": "exp1",
+  "features": [
+   "v_dev_pct",
+   "v_std_pct",
+   "rvc_max_pct",
+   "vuf_pct",
+   "f_dev_abs_hz",
+   "thd_u_pct",
+   "u_h5_pct",
+   "thd_i_pct",
+   "i_rms_a",
+   "i_n_a"
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "n_windows": 47083,
+  "dimensions": 10,
+  "pca_explained_variance_3": [
+   0.3554471406339235,
+   0.19838288436279417,
+   0.11920970670403593
+  ],
+  "stage1": {
+   "min_samples": 20,
+   "eps": 1.515118300994587,
+   "n_clusters": 1,
+   "noise_pct": 2.034704670475543,
+   "silhouette": NaN,
+   "davies_bouldin": NaN
+  },
+  "stage2": {
+   "min_samples": 11,
+   "eps": 3.205470886720469,
+   "n_input_windows": 958,
+   "n_clusters": 2,
+   "residual_noise_pct_of_stage2_input": 1.5657620041753653,
+   "silhouette": 0.5890348213728199,
+   "davies_bouldin": 0.5552378482049866
+  },
+  "final": {
+   "n_clusters": 3,
+   "isolated_noise_pct": 0.03185863262748763,
+   "unusual_pct": 2.034704670475543,
+   "dominant_cluster_pct": 97.96529532952447,
+   "silhouette": 0.5325222914156035,
+   "davies_bouldin": 1.069283731419331
+  },
+  "label_names": {
+   "-1": "Isolated (noise)",
+   "0": "C0 dominant",
+   "1": "U1 unusual pattern",
+   "2": "U2 unusual pattern"
+  },
+  "label_counts": {
+   "-1": 15,
+   "0": 46125,
+   "1": 815,
+   "2": 128
+  },
+  "unusual_episodes": {
+   "count": 865,
+   "median_duration_min": 10.0,
+   "max_duration_min": 60.0
+  },
+  "stability": {
+   "ari_labels": {
+    "mean": 0.9661719622668212,
+    "min": 0.9538734256494148
+   },
+   "ari_unusual_vs_normal": {
+    "mean": 0.9660072746198679,
+    "min": 0.9536551606224327
+   },
+   "unusual_jaccard": {
+    "mean": 0.9380356393613585,
+    "min": 0.916243654822335
+   }
+  },
+  "scaler_comparison": {
+   "standard_unusual_pct": 2.1748826540364887,
+   "standard_n_clusters": 2,
+   "unusual_jaccard_robust_vs_standard": 0.7807726864330637,
+   "ari_robust_vs_standard": 0.8687832063133588
+  },
+  "association": {
+   "cluster_vs_re_level": {
+    "chi2": 113.75621480990719,
+    "p_naive": 3.32874161651872e-22,
+    "cramers_v": 0.033828884880902806,
+    "dof": 6
+   },
+   "permutation_tests": {
+    "vre_penetration_pct": {
+     "cramers_v": 0.033828884880902806,
+     "null_mean": 0.020669906964817058,
+     "null_p95": 0.025897624037646658,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "vre_penetration_pct__unusual_flag": {
+     "cramers_v": 0.041568376184261714,
+     "null_mean": 0.026336219529573726,
+     "null_p95": 0.03363070379136121,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "solar_penetration_pct": {
+     "cramers_v": 0.03772334137953001,
+     "null_mean": 0.03082035394884709,
+     "null_p95": 0.034174059252546185,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47083
+    },
+    "solar_penetration_pct__unusual_flag": {
+     "cramers_v": 0.047376288529248495,
+     "null_mean": 0.039655777510454494,
+     "null_p95": 0.044239470688063325,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47083
+    },
+    "wind_penetration_pct": {
+     "cramers_v": 0.016327338047762315,
+     "null_mean": 0.009586765730621663,
+     "null_p95": 0.017404482633492785,
+     "p_value": 0.08183632734530938,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "wind_penetration_pct__unusual_flag": {
+     "cramers_v": 0.016278028955165832,
+     "null_mean": 0.012106855155908466,
+     "null_p95": 0.02295723516730939,
+     "p_value": 0.26746506986027946,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "vre_share_of_generation_pct": {
+     "cramers_v": 0.0371011132641931,
+     "null_mean": 0.021222799198954295,
+     "null_p95": 0.026529799400679614,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47080
+    },
+    "vre_share_of_generation_pct__unusual_flag": {
+     "cramers_v": 0.04557805891890902,
+     "null_mean": 0.02705310435612355,
+     "null_p95": 0.03399192665914603,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47080
+    },
+    "local_pv_output_generating_windows": {
+     "cramers_v": 0.01147667202306225,
+     "null_mean": 0.013021945951464456,
+     "null_p95": 0.03754530122564325,
+     "p_value": 0.48502994011976047,
+     "n_perm": 500,
+     "n": 3197
+    },
+    "local_pv_output_generating_windows__unusual_flag": {
+     "cramers_v": 0.02530978107771535,
+     "null_mean": 0.012995318665002562,
+     "null_p95": 0.044769787531623396,
+     "p_value": 0.24750499001996007,
+     "n_perm": 500,
+     "n": 3197
+    }
+   },
+   "cluster_vs_local_pv_level": {
+    "chi2": 25.433804422395042,
+    "p_naive": 0.0025269784887845216,
+    "cramers_v": 0.022207483283714143,
+    "dof": 9,
+    "n": 11110
+   }
+  }
+ },
+ "exp2": {
+  "experiment": "exp2",
+  "features": [
+   "v_dev_pct",
+   "v_std_pct",
+   "rvc_max_pct",
+   "vuf_pct",
+   "f_dev_abs_hz",
+   "thd_u_pct",
+   "u_h5_pct",
+   "thd_i_pct",
+   "i_rms_a",
+   "i_n_a",
+   "vre_penetration_pct",
+   "solar_pv_mw",
+   "wind_onshore_mw"
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9128709291752769,
+   0.9128709291752769,
+   0.9128709291752769
+  ],
+  "n_windows": 47082,
+  "dimensions": 13,
+  "pca_explained_variance_3": [
+   0.2882224967503498,
+   0.20738550673312936,
+   0.11217601979559505
+  ],
+  "stage1": {
+   "min_samples": 26,
+   "eps": 1.8848687779711368,
+   "n_clusters": 1,
+   "noise_pct": 1.7862452742024555,
+   "silhouette": NaN,
+   "davies_bouldin": NaN
+  },
+  "stage2": {
+   "min_samples": 14,
+   "eps": 3.943248084066857,
+   "n_input_windows": 841,
+   "n_clusters": 1,
+   "residual_noise_pct_of_stage2_input": 1.070154577883472,
+   "silhouette": NaN,
+   "davies_bouldin": NaN
+  },
+  "final": {
+   "n_clusters": 2,
+   "isolated_noise_pct": 0.019115585574104754,
+   "unusual_pct": 1.7862452742024555,
+   "dominant_cluster_pct": 98.21375472579754,
+   "silhouette": 0.5918560542455285,
+   "davies_bouldin": 1.2091320974365138
+  },
+  "label_names": {
+   "-1": "Isolated (noise)",
+   "0": "C0 dominant",
+   "1": "U1 unusual pattern"
+  },
+  "label_counts": {
+   "-1": 9,
+   "0": 46241,
+   "1": 832
+  },
+  "unusual_episodes": {
+   "count": 751,
+   "median_duration_min": 10.0,
+   "max_duration_min": 60.0
+  },
+  "stability": {
+   "ari_labels": {
+    "mean": 0.9606148910973683,
+    "min": 0.9483083994043807
+   },
+   "ari_unusual_vs_normal": {
+    "mean": 0.9608834620494348,
+    "min": 0.9492752052640723
+   },
+   "unusual_jaccard": {
+    "mean": 0.9285923329119798,
+    "min": 0.9082058414464534
+   }
+  },
+  "scaler_comparison": {
+   "standard_unusual_pct": 1.7119068858587148,
+   "standard_n_clusters": 2,
+   "unusual_jaccard_robust_vs_standard": 0.7921653971708379,
+   "ari_robust_vs_standard": 0.8782240458062868
+  },
+  "association": {
+   "cluster_vs_re_level": {
+    "chi2": 252.62444653487643,
+    "p_naive": 1.7707960328936144e-53,
+    "cramers_v": 0.051385266794844786,
+    "dof": 4
+   },
+   "permutation_tests": {
+    "vre_penetration_pct": {
+     "cramers_v": 0.051385266794844786,
+     "null_mean": 0.03390704321823773,
+     "null_p95": 0.03898092098164879,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "vre_penetration_pct__unusual_flag": {
+     "cramers_v": 0.07270374681168389,
+     "null_mean": 0.04790839081898832,
+     "null_p95": 0.055202077500757604,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "solar_penetration_pct": {
+     "cramers_v": 0.05103712236921283,
+     "null_mean": 0.04285711217348624,
+     "null_p95": 0.04600464042054065,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "solar_penetration_pct__unusual_flag": {
+     "cramers_v": 0.07223001088587747,
+     "null_mean": 0.06040043134029716,
+     "null_p95": 0.0648800659436846,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "wind_penetration_pct": {
+     "cramers_v": 0.009723456587272293,
+     "null_mean": 0.012018487072050762,
+     "null_p95": 0.019242663822627876,
+     "p_value": 0.7225548902195609,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "wind_penetration_pct__unusual_flag": {
+     "cramers_v": 0.014933598351054253,
+     "null_mean": 0.017073103480645984,
+     "null_p95": 0.027355595507540215,
+     "p_value": 0.6666666666666666,
+     "n_perm": 500,
+     "n": 47082
+    },
+    "vre_share_of_generation_pct": {
+     "cramers_v": 0.053414783692602504,
+     "null_mean": 0.034423638155211295,
+     "null_p95": 0.03986396626513346,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47080
+    },
+    "vre_share_of_generation_pct__unusual_flag": {
+     "cramers_v": 0.07559114330633314,
+     "null_mean": 0.04863215756156843,
+     "null_p95": 0.05646217093779254,
+     "p_value": 0.001996007984031936,
+     "n_perm": 500,
+     "n": 47080
+    },
+    "local_pv_output_generating_windows": {
+     "cramers_v": 0.04759002923330634,
+     "null_mean": 0.014493154831301485,
+     "null_p95": 0.05005320979347032,
+     "p_value": 0.0718562874251497,
+     "n_perm": 500,
+     "n": 3197
+    },
+    "local_pv_output_generating_windows__unusual_flag": {
+     "cramers_v": 0.04759002923330634,
+     "null_mean": 0.014493154831301485,
+     "null_p95": 0.05005320979347032,
+     "p_value": 0.0718562874251497,
+     "n_perm": 500,
+     "n": 3197
+    }
+   },
+   "cluster_vs_local_pv_level": {
+    "chi2": 66.22850114228422,
+    "p_naive": 2.4203512330566788e-12,
+    "cramers_v": 0.05206977487247349,
+    "dof": 6,
+    "n": 11109
+   }
+  }
+ }
+}

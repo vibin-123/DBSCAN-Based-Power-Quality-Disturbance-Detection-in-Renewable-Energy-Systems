@@ -1,0 +1,28 @@
+feature,kind,unit,meaning
+v_rms,measured,V,Mean phase-to-neutral RMS voltage (3-phase average).
+v_dev_pct,calculated,%,Deviation of v_rms from 230 V nominal; EN 50160 allows +/-10 %.
+v_std_pct,calculated,% of Un,Within-window std of 5 s voltage: slow voltage fluctuation.
+rvc_max_pct,calculated,% of Un,Largest 5 s step change of voltage in the window (rapid voltage change proxy).
+vuf_pct,calculated,%,"Voltage unbalance factor (negative/positive sequence) from the three line-line magnitudes, IEC 61000-4-30 formula."
+freq_hz,measured,Hz,Mean system frequency.
+f_dev_abs_hz,calculated,Hz,Mean absolute deviation from 50 Hz: active-power balance of the synchronous area.
+f_dev_max_hz,calculated,Hz,Largest absolute frequency deviation in the window.
+thd_u_pct,measured,%,Voltage THD (3-phase mean); EN 50160 limit 8 %.
+thd_u_max_pct,measured,%,Maximum 5 s voltage THD of any phase in the window.
+thd_i_pct,measured,%,Current THD (3-phase mean): non-linearity of the facility load.
+u_h3_pct,measured,%,"3rd voltage harmonic, phase 1 (zero-sequence, single-phase loads)."
+u_h5_pct,measured,%,5th voltage harmonic (3-phase mean): six-pulse converters / inverters.
+u_h7_pct,measured,%,"7th voltage harmonic, phase 1."
+i_rms_a,measured,A,Mean phase RMS current (loading of the connection point).
+i_n_a,measured,A,Neutral conductor current (unbalance + triplen harmonics).
+i_unb_pct,calculated,%,Current unbalance: max deviation of a phase current from the mean.
+p_kw,measured,kW,Total active power at the metering point.
+q_kvar,measured,kvar,Total reactive power.
+pf,measured,-,Total power factor.
+sag_samples,calculated,count,5 s RMS samples below 0.90 pu (EN 50160 dip threshold) on any phase.
+swell_samples,calculated,count,5 s RMS samples above 1.10 pu on any phase.
+severity_index,calculated,-,"Largest fraction of an EN 50160 limit in use: max(|dV|/10 %, THDu/8 %, VUF/2 %, |df|/0.5 Hz)."
+v_dev_roll_mean_1h,calculated,%,1-hour rolling mean of v_dev_pct (trend).
+v_dev_roll_std_1h,calculated,%,1-hour rolling std of v_dev_pct (volatility).
+thd_u_roll_mean_1h,calculated,%,1-hour rolling mean of thd_u_pct.
+thd_u_roll_std_1h,calculated,%,1-hour rolling std of thd_u_pct.
